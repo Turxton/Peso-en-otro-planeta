@@ -5,16 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Si, wenas? =^-^=</title>
 
     <!-- Styles CSS-->
     <link rel=stylesheet type="text/css" href="css/styles.css">
 </head>
 
 <body>
-    <h1>Descubre tu peso en otro planeta =^-^=</h1>
-    <p>En la tierra pesas distinto que en Marte o Jupiter</p>
-    
+    <div class="container">
+        <h1>Descubre tu peso en otro planeta =^-^=</h1>
+        <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+        <div class="form">
+            <div class="container-peso">    
+                <label class="label" for="peso-number">¿Cuál es tu peso?</label>
+                <input class="input" type="number" id="peso-number" min="0" required>
+                <samp>Kg</samp>
+            </div>
+            <div class="container-planeta">
+                <label class="label" for="planeta">Selecciona tu destino:</label>
+                <select class="selector" id="destino">
+                    <option value="1">Marte</option> 
+                    <option value="2">Jupiter</option> 
+                </select>
+            </div>
+            <button class="button" onclick="calcularPeso()" id="button">Vamos!</button>
+        </div>
+        
+        <p id="resultado"></p>
+
+    </div>
+
     <!-- App JavaScript-->
     <script src="js/app.js"></script>
 </body>
