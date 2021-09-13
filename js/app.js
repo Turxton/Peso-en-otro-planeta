@@ -3,8 +3,6 @@ const g_marte = 3.7;
 const g_jupiter = 24.8;
 const planeta = ["Kryptón","Marte", "Jupiter"];
 
-/* let peso = parseInt(prompt(`¿Cuál es tu peso?`));
-let destino = parseInt(prompt(`Elige tu planeta:\n1 es Marte, 2 es Jupiter`)); */
 let peso_final = 0;
 
 function calcularPeso(){
@@ -23,6 +21,7 @@ function calcularPeso(){
         destino = 0;
     }
 
-    document.getElementById("resultado").innerHTML = `Tu peso en ${planeta[destino]} es: <strong>${peso_final} Kg</strong>`;
-    /* document.write(`Tu peso en ${planeta[destino]} es: <strong>${peso_final} Kg</strong>`) */
+    let x = `Tu peso en ${planeta[destino]} es: <strong>${peso_final} Kg</strong>`
+    
+    document.getElementById("resultado").innerHTML = x;
 }

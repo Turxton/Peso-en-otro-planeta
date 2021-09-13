@@ -1,2 +1,3 @@
-# 01_Peso-en-otro-planeta
- [Página web] Descubre cuanto pesas estando en otros planetas
+# Ejercicio 01: Descubre tu peso en otro planeta
+ [Desarrollo Web] [HTML] [CSS] [JavaScrip]
+ [Enlace] https://turxton.github.io/Peso-en-otro-planeta/
